@@ -7,7 +7,7 @@ const addNoteHandler = (request, h) => {
     title,
     tags,
     body
-  } = request.payload;
+  } = request.payload
   const id = nanoid(16)
   const createdAt = new Date().toISOString()
   const updatedAt = createdAt
